@@ -28,9 +28,9 @@ class DrivableMap {
      *       Return true if the Drivable was added to drivable_map.
      */
 	public boolean addDrivable(String x, Drivable y) {
-		if (drivable_map.containsKey(x)) return true;
+		if (drivable_map.containsKey(x)) return false;
 		drivable_map.put(x,y);
-		return false;
+		return true;
 	}
 
 
